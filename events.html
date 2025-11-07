@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | POAP Protocol</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                POAP Protocol
+            </div>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+                <a href="events.html" class="nav-link active">
+                    <i class="fas fa-calendar-check"></i> Events
+                </a>
+                <a href="reputation.html" class="nav-link">
+                    <i class="fas fa-chart-line"></i> Reputation
+                </a>
+                <a href="governance.html" class="nav-link">
+                    <i class="fas fa-vote-yea"></i> Governance
+                </a>
+                <a href="staking.html" class="nav-link">
+                    <i class="fas fa-gem"></i> Staking
+                </a>
+            </nav>
+            
+            <div class="wallet-section">
+                <div class="network-indicator">
+                    <i class="fas fa-circle"></i> Solana Mainnet
+                </div>
+                <button class="connect-btn">
+                    <i class="fas fa-wallet"></i> 0x8f1...4c3a
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Participation Events</h1>
+                <p>Discover and join events to build your reputation</p>
+                <button class="connect-btn">
+                    <i class="fas fa-plus"></i> Create New Event
+                </button>
+            </div>
+
+            <!-- Event Filters -->
+            <div class="filters-bar">
+                <div class="filter-group">
+                    <button class="filter-btn active">All Events</button>
+                    <button class="filter-btn">Live Now</button>
+                    <button class="filter-btn">Upcoming</button>
+                    <button class="filter-btn">Completed</button>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search events...">
+                </div>
+            </div>
+
+            <!-- Events Grid -->
+            <div class="events-grid">
+                <div class="event-card featured">
+                    <div class="event-header">
+                        <span class="event-badge">Featured</span>
+                        <span class="event-status status-live">Live</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Solana Breakpoint 2024</h3>
+                        <p>Annual Solana conference with workshops, hackathons, and networking events</p>
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Nov 15-17, 2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>2.4K Participants</span>
+                            </div>
+                        </div>
+                        <div class="event-rewards">
+                            <div class="reward-tag">
+                                <i class="fas fa-medal"></i>
+                                +25 REP
+                            </div>
+                            <div class="reward-tag">
+                                <i class="fas fa-gift"></i>
+                                $150 Pool
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <button class="action-btn primary">Participate Now</button>
+                        <button class="action-btn secondary">View Details</button>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-header">
+                        <span class="event-status status-upcoming">Starting Soon</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Web3 Developer Challenge</h3>
+                        <p>Build and deploy innovative DApps on Solana for amazing prizes</p>
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Starts Dec 1, 2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>850 Registered</span>
+                            </div>
+                        </div>
+                        <div class="event-rewards">
+                            <div class="reward-tag">
+                                <i class="fas fa-medal"></i>
+                                +50 REP
+                            </div>
+                            <div class="reward-tag">
+                                <i class="fas fa-gift"></i>
+                                $500 Prize
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <button class="action-btn primary">Register Now</button>
+                        <button class="action-btn secondary">Notify Me</button>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-header">
+                        <span class="event-status status-live">Live</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>DAO Governance Session</h3>
+                        <p>Participate in protocol governance and shape the future</p>
+                        <div class="event-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Ongoing</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>1.2K Voters</span>
+                            </div>
+                        </div>
+                        <div class="event-rewards">
+                            <div class="reward-tag">
+                                <i class="fas fa-medal"></i>
+                                +15 REP
+                            </div>
+                            <div class="reward-tag">
+                                <i class="fas fa-vote-yea"></i>
+                                Voting Power
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <button class="action-btn primary">Vote Now</button>
+                        <button class="action-btn secondary">View Proposals</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Events Section -->
+            <div class="main-card" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <h2 class="card-title">My Participating Events</h2>
+                </div>
+                <table class="events-table">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Progress</th>
+                            <th>Earned REP</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="event-name">Community AMA Series</div>
+                                <div class="event-description">Weekly community calls</div>
+                            </td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                <div class="progress-text">3/4 sessions</div>
+                            </td>
+                            <td>
+                                <div class="reward-amount">+18 REP</div>
+                            </td>
+                            <td><span class="status-badge status-live">Active</span></td>
+                            <td><button class="action-btn">Continue</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

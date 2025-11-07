@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POAP Protocol | Reputation-Based Participation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                POAP Protocol
+            </div>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+                <a href="events.html" class="nav-link">
+                    <i class="fas fa-calendar-check"></i> Events
+                </a>
+                <a href="reputation.html" class="nav-link">
+                    <i class="fas fa-chart-line"></i> Reputation
+                </a>
+                <a href="governance.html" class="nav-link">
+                    <i class="fas fa-vote-yea"></i> Governance
+                </a>
+                <a href="staking.html" class="nav-link">
+                    <i class="fas fa-gem"></i> Staking
+                </a>
+            </nav>
+            
+            <div class="wallet-section">
+                <div class="network-indicator">
+                    <i class="fas fa-circle"></i> Solana Mainnet
+                </div>
+                <button class="connect-btn">
+                    <i class="fas fa-wallet"></i> 0x8f1...4c3a
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Stats Overview -->
+            <div class="stats-overview">
+                <div class="stat-card">
+                    <div class="stat-value">$2.4M</div>
+                    <div class="stat-label">Total Value Locked</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">12.8K</div>
+                    <div class="stat-label">Active Participants</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">347</div>
+                    <div class="stat-label">Live Events</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">84.5</div>
+                    <div class="stat-label">Avg Reputation Score</div>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Left Column -->
+                <div>
+                    <!-- Live Events -->
+                    <div class="main-card">
+                        <div class="card-header">
+                            <h2 class="card-title">Live Participation Events</h2>
+                            <a href="events.html" class="view-all">View All</a>
+                        </div>
+                        
+                        <table class="events-table">
+                            <thead>
+                                <tr>
+                                    <th>Event</th>
+                                    <th>Type</th>
+                                    <th>Rewards</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="event-name">Solana Breakpoint 2024</div>
+                                        <div class="event-description">Conference & Workshops</div>
+                                    </td>
+                                    <td><span class="event-type">Education</span></td>
+                                    <td>
+                                        <div class="reward-amount">+25 REP</div>
+                                        <div class="reward-details">$150 Pool</div>
+                                    </td>
+                                    <td><span class="status-badge status-live">Live</span></td>
+                                    <td><button class="action-btn">Participate</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="event-name">DAO Governance Vote #42</div>
+                                        <div class="event-description">Protocol Upgrade</div>
+                                    </td>
+                                    <td><span class="event-type">Governance</span></td>
+                                    <td>
+                                        <div class="reward-amount">+15 REP</div>
+                                        <div class="reward-details">Weighted Voting</div>
+                                    </td>
+                                    <td><span class="status-badge status-live">Live</span></td>
+                                    <td><button class="action-btn">Vote Now</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="main-card" style="margin-top: 2rem;">
+                        <div class="card-header">
+                            <h2 class="card-title">Quick Actions</h2>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <a href="events.html?create=true" class="action-card">
+                                <div class="action-icon">
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <div class="action-title">Create Event</div>
+                                <div class="action-description">Launch new participation event</div>
+                            </a>
+                            <a href="reputation.html" class="action-card">
+                                <div class="action-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="action-title">Analytics</div>
+                                <div class="action-description">View participation insights</div>
+                            </a>
+                            <a href="governance.html" class="action-card">
+                                <div class="action-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="action-title">Governance</div>
+                                <div class="action-description">Participate in voting</div>
+                            </a>
+                            <a href="staking.html" class="action-card">
+                                <div class="action-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <div class="action-title">Stake REP</div>
+                                <div class="action-description">Earn rewards on reputation</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <!-- Reputation Score -->
+                    <div class="main-card">
+                        <div class="reputation-widget">
+                            <h2 class="card-title">Your Reputation</h2>
+                            <div class="reputation-ring">
+                                <div class="reputation-inner">
+                                    <div class="reputation-score">87</div>
+                                    <div class="reputation-label">REP Score</div>
+                                </div>
+                            </div>
+                            <div class="reputation-change">
+                                <i class="fas fa-arrow-up"></i> +12 this month
+                            </div>
+                            <a href="reputation.html" class="connect-btn" style="width: 100%; text-align: center; display: block; text-decoration: none;">
+                                <i class="fas fa-chart-bar"></i> View Detailed Analytics
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="main-card" style="margin-top: 2rem;">
+                        <div class="card-header">
+                            <h2 class="card-title">Recent Activity</h2>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+                        
+                        <div class="activity-feed">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-vote-yea"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Voted on Proposal #42</div>
+                                    <div class="activity-time">2 hours ago</div>
+                                </div>
+                                <div class="activity-reward">+5 REP</div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Completed Workshop</div>
+                                    <div class="activity-time">1 day ago</div>
+                                </div>
+                                <div class="activity-reward">+15 REP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

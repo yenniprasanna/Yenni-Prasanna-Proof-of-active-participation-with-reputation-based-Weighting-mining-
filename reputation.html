@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reputation | POAP Protocol</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                POAP Protocol
+            </div>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+                <a href="events.html" class="nav-link">
+                    <i class="fas fa-calendar-check"></i> Events
+                </a>
+                <a href="reputation.html" class="nav-link active">
+                    <i class="fas fa-chart-line"></i> Reputation
+                </a>
+                <a href="governance.html" class="nav-link">
+                    <i class="fas fa-vote-yea"></i> Governance
+                </a>
+                <a href="staking.html" class="nav-link">
+                    <i class="fas fa-gem"></i> Staking
+                </a>
+            </nav>
+            
+            <div class="wallet-section">
+                <div class="network-indicator">
+                    <i class="fas fa-circle"></i> Solana Mainnet
+                </div>
+                <button class="connect-btn">
+                    <i class="fas fa-wallet"></i> 0x8f1...4c3a
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Reputation Analytics</h1>
+                <p>Track and analyze your reputation growth across the ecosystem</p>
+            </div>
+
+            <!-- Reputation Overview -->
+            <div class="dashboard-grid">
+                <div class="main-card">
+                    <div class="reputation-widget large">
+                        <div class="reputation-ring large">
+                            <div class="reputation-inner">
+                                <div class="reputation-score">87</div>
+                                <div class="reputation-label">REP Score</div>
+                            </div>
+                        </div>
+                        <div class="reputation-stats">
+                            <div class="rep-stat">
+                                <div class="stat-value">Top 15%</div>
+                                <div class="stat-label">Global Rank</div>
+                            </div>
+                            <div class="rep-stat">
+                                <div class="stat-value">+12</div>
+                                <div class="stat-label">This Month</div>
+                            </div>
+                            <div class="rep-stat">
+                                <div class="stat-value">42</div>
+                                <div class="stat-label">Events Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-card">
+                    <div class="card-header">
+                        <h2 class="card-title">Reputation Breakdown</h2>
+                    </div>
+                    <div class="breakdown-grid">
+                        <div class="breakdown-item">
+                            <div class="breakdown-header">
+                                <span>Participation</span>
+                                <span>40/50</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-header">
+                                <span>Consistency</span>
+                                <span>25/30</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 83%"></div>
+                            </div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-header">
+                                <span>Community</span>
+                                <span>15/20</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reputation History -->
+            <div class="main-card" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <h2 class="card-title">Reputation History</h2>
+                    <div class="time-filters">
+                        <button class="filter-btn active">1M</button>
+                        <button class="filter-btn">3M</button>
+                        <button class="filter-btn">1Y</button>
+                        <button class="filter-btn">All</button>
+                    </div>
+                </div>
+                <div class="chart-placeholder">
+                    <div class="chart-container">
+                        <!-- This would be a chart in real implementation -->
+                        <div class="mock-chart">
+                            <div class="chart-line" style="height: 60%"></div>
+                            <div class="chart-line" style="height: 70%"></div>
+                            <div class="chart-line" style="height: 65%"></div>
+                            <div class="chart-line" style="height: 80%"></div>
+                            <div class="chart-line" style="height: 75%"></div>
+                            <div class="chart-line" style="height: 87%"></div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REP Rewards -->
+            <div class="main-card" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <h2 class="card-title">Recent REP Earnings</h2>
+                </div>
+                <table class="events-table">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                            <th>REP Earned</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Governance Vote #42</td>
+                            <td>2024-06-15</td>
+                            <td class="positive">+5 REP</td>
+                            <td><span class="event-type">Governance</span></td>
+                        </tr>
+                        <tr>
+                            <td>Web3 Workshop Completion</td>
+                            <td>2024-06-12</td>
+                            <td class="positive">+15 REP</td>
+                            <td><span class="event-type">Education</span></td>
+                        </tr>
+                        <tr>
+                            <td>Community Contribution</td>
+                            <td>2024-06-08</td>
+                            <td class="positive">+8 REP</td>
+                            <td><span class="event-type">Community</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

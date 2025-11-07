@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staking | POAP Protocol</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                POAP Protocol
+            </div>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+                <a href="events.html" class="nav-link">
+                    <i class="fas fa-calendar-check"></i> Events
+                </a>
+                <a href="reputation.html" class="nav-link">
+                    <i class="fas fa-chart-line"></i> Reputation
+                </a>
+                <a href="governance.html" class="nav-link">
+                    <i class="fas fa-vote-yea"></i> Governance
+                </a>
+                <a href="staking.html" class="nav-link active">
+                    <i class="fas fa-gem"></i> Staking
+                </a>
+            </nav>
+            
+            <div class="wallet-section">
+                <div class="network-indicator">
+                    <i class="fas fa-circle"></i> Solana Mainnet
+                </div>
+                <button class="connect-btn">
+                    <i class="fas fa-wallet"></i> 0x8f1...4c3a
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>REP Token Staking</h1>
+                <p>Stake your REP tokens to earn rewards and boost your governance power</p>
+            </div>
+
+            <!-- Staking Overview -->
+            <div class="dashboard-grid">
+                <div class="main-card">
+                    <div class="staking-widget">
+                        <h2 class="card-title">Your Staking Position</h2>
+                        <div class="staking-balance">
+                            <div class="balance-value">42 REP</div>
+                            <div class="balance-label">Staked Amount</div>
+                        </div>
+                        <div class="staking-rewards">
+                            <div class="reward-item">
+                                <span>APY</span>
+                                <span class="reward-value">12.5%</span>
+                            </div>
+                            <div class="reward-item">
+                                <span>Earned</span>
+                                <span class="reward-value">+8.4 REP</span>
+                            </div>
+                            <div class="reward-item">
+                                <span>Next Reward</span>
+                                <span class="reward-value">in 2 days</span>
+                            </div>
+                        </div>
+                        <div class="staking-actions">
+                            <button class="action-btn primary">
+                                <i class="fas fa-plus"></i> Stake More
+                            </button>
+                            <button class="action-btn secondary">
+                                <i class="fas fa-download"></i> Unstake
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-card">
+                    <div class="card-header">
+                        <h2 class="card-title">Staking Stats</h2>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">2.4M REP</div>
+                                <div class="stat-label">Total Staked</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">8,542</div>
+                                <div class="stat-label">Stakers</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">12.5%</div>
+                                <div class="stat-label">Avg APY</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value">$4.2M</div>
+                                <div class="stat-label">TVL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stake/Unstake Interface -->
+            <div class="main-card" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <h2 class="card-title">Manage Staking</h2>
+                </div>
+                <div class="staking-interface">
+                    <div class="stake-tabs">
+                        <button class="stake-tab active">Stake</button>
+                        <button class="stake-tab">Unstake</button>
+                    </div>
+                    
+                    <div class="stake-form">
+                        <div class="form-group">
+                            <label>Amount to Stake</label>
+                            <div class="input-group">
+                                <input type="number" placeholder="0.0" value="10">
+                                <span class="input-suffix">REP</span>
+                            </div>
+                            <div class="balance-info">
+                                <span>Available: 45 REP</span>
+                                <button class="max-btn">MAX</button>
+                            </div>
+                        </div>
+                        
+                        <div class="staking-details">
+                            <div class="detail-item">
+                                <span>Est. APY</span>
+                                <span>12.5%</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Est. Monthly Rewards</span>
+                                <span>~1.04 REP</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Unstaking Period</span>
+                                <span>7 days</span>
+                            </div>
+                        </div>
+                        
+                        <button class="connect-btn" style="width: 100%; margin-top: 1.5rem;">
+                            <i class="fas fa-lock"></i> Stake REP Tokens
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Staking History -->
+            <div class="main-card" style="margin-top: 2rem;">
+                <div class="card-header">
+                    <h2 class="card-title">Staking History</h2>
+                </div>
+                <table class="events-table">
+                    <thead>
+                        <tr>
+                            <th>Transaction</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="tx-hash">0x8f1a...c3a2</div>
+                            </td>
+                            <td>+20 REP</td>
+                            <td><span class="event-type">Stake</span></td>
+                            <td>2024-06-10</td>
+                            <td><span class="status-badge status-success">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="tx-hash">0x7b3c...d9e1</div>
+                            </td>
+                            <td>+22 REP</td>
+                            <td><span class="event-type">Stake</span></td>
+                            <td>2024-05-28</td>
+                            <td><span class="status-badge status-success">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="tx-hash">0x9a2d...f4b7</div>
+                            </td>
+                            <td>+8.4 REP</td>
+                            <td><span class="event-type">Reward</span></td>
+                            <td>2024-06-15</td>
+                            <td><span class="status-badge status-success">Claimed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
