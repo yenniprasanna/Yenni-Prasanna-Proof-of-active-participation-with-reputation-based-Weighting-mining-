@@ -1,0 +1,2 @@
+# Yenni-Prasanna-Proof-of-active-participation-with-reputation-based-Weighting-mining-
+Introducing PoAP-RBW, a hybrid consensus mechanism for blockchain ecosystems, combining reputation dynamics, machine learning, and weighted random selection. It addresses limitations of traditional systems, ensuring merit-based influence and resilience against attacks. Outperforms PoW and PoS in security, with provable safety and adaptability.
